@@ -6,6 +6,12 @@
   <title>Ejemplo</title>
 </head>
 <body>
-  <h1>Hola mundo</h1>
-</body>
+<h1>
+<?php
+  $hola = "hola mundooo¿¿";
+  echo $hola;
+  ?>
+</h1>
+
+  </body>
 </html>
