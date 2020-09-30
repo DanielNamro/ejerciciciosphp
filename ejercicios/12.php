@@ -9,7 +9,7 @@
 <body>
     <h2>Formulario</h2>
     <form method="POST" action="12.php">
-        <label>Nombre</label><input type="text" value="" name="Nombre" minlength="3" required><br>
+        <label>Nombre</label><input type="text" value="" name="Nombre"  required><br>
 
         <input type="submit" value="enviar">
     </form>
