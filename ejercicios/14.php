@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <h2>CALCULANDO LOS MILLONES KLKKK</h2>
+    <h2>CALCULADORA</h2>
     <form method="POST" action="14action.php">
     <select name="signo">
            <option>+</option>
