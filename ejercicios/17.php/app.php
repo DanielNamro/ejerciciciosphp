@@ -28,10 +28,12 @@ public function potenciados(){
          // echo("$potencias  ");
          }
          include('views/index.php');
+         
     }
 
 public function index()
 {
-    include('views/index.php');}
+    include('views/index.php');
+    include('views/potencias.php');
 }
 ?>

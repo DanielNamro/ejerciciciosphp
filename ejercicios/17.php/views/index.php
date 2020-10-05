@@ -8,11 +8,7 @@
 </head>
 <body>
 <ul>
-    <?php
-    foreach ($potencias  as $value) {
-    echo "<li>" , $value , "</li>"    ;
-    }
-    ?>
+<li><a href="http://ejercicios.local/ejercicios/17.php/views/potencias.php?method=potencias.php">POTENSIAS</a></li>
 </ul>
 
 </body>
