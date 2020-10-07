@@ -8,7 +8,9 @@
 </head>
 <body>
 <ul>
-<li><a href="http://ejercicios.local/ejercicios/17.php/views/potencias.php?method=potencias.php">POTENSIAS</a></li>
+<li><a href="http://ejercicios.local/ejercicios/17.php/index.php?method=potenciados">POTENCIIAS</a></li>
+<li><a href="http://ejercicios.local/ejercicios/17.php/index.php?method=fibonacci">FIBONACCI</a></li>
+
 </ul>
 
 </body>

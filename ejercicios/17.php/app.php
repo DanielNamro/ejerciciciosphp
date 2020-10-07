@@ -14,7 +14,7 @@ class app{
       }
     
    
-      $this->potenciados();  
+      $this->$method();  
     }
 
 
@@ -27,13 +27,28 @@ public function potenciados(){
           $potencias[] = pow(2,$i);
          // echo("$potencias  ");
          }
-         include('views/index.php');
+         include('views/potencias.php');
          
     }
+
+public function fibonacci(){
+$num1 = 1;
+$num2 = 0;
+$conten = [];
+while($num1<1000000 || $num2<1000000){
+    $suma = $num1+$num2;
+    $num1 = $num2;
+    $num2 = $suma;
+    $conten[] = $num2;
+}
+
+    include('views/fibonacci.php');
+}
 
 public function index()
 {
     include('views/index.php');
-    include('views/potencias.php');
+    
+    
 }
-?>
+}

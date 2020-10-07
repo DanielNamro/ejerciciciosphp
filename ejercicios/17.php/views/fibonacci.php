@@ -11,7 +11,7 @@
 <body>
   <ul>
     <?php
-    foreach ($potencias  as $value) {
+    foreach ($conten  as $value) {
       echo "<li>" . $value . "</li>";
     }
     ?>
