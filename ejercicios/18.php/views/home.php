@@ -10,11 +10,14 @@
 
 <body>
     <h1>UN SALUDO A TODOS</H1>
+    <ul>
 <?php
 foreach($_COOKIE as $cosa){
-    echo "$cosa, <br>";
+    echo "<li>$cosa </li>";
 }
+
 ?>
+</ul>
 <a href="index.php?method=logout"> para acabar</a>
 
 
