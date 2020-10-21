@@ -6,7 +6,7 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Bienvenido <?= $_COOKIE['name'] ?></h1>
+  <h1>Bienvenido <?= $_SESSION['name'] ?></h1>
 
   <h2>Lista de deseos</h2>
   <h4><a href="?method=empty">Vaciar lista de deseos</a></h4>
@@ -16,7 +16,7 @@
   <?php 
   // var_dump($deseos);
   // exit();
-  if (count($deseos)) {
+  if (isset($deseos) && count($deseos)) {
     foreach ($deseos as $id => $deseo) {
       echo "<li> Deseo nº $id: " . $deseo . ' <a href="?method=delete&id=' . $id . '"> borrar</a> </li>';
     }
