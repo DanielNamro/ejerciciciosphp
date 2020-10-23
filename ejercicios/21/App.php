@@ -33,18 +33,28 @@ class App
   }
 
   public function home(){
+      $deseos = $_SESSION['deseos'];
     include('views/home.php');
   }
 
   public function new(){
-      $new = $_POST['new'];
-    if (isset($_SESSION['deseos'])) {
+    if (isset($_POST['new']) && !empty($_POST['new'])) {
+        $new = $_POST['new'];
         $deseos = $_SESSION['deseos'];
-      } else {
-        $deseos = [];
-      }
-      $deseos[] = $new;
+        $deseos[] = $new;
       $_SESSION['deseos'] = $deseos;
+      } 
+      
+      header('Location: index.php?method=home');
+  }
+
+  public function close(){
+      session_destroy();
+      header('Location: index.php?method=home');
+  }
+  public function empty(){
+      $id = $_POST['deseo'];
+    unset($deseos[$id]);
       header('Location: index.php?method=home');
   }
 

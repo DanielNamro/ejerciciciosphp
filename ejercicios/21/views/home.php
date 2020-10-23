@@ -6,6 +6,9 @@
   <title>Document</title>
 </head>
 <body>
+<?php 
+var_dump( $_SESSION['deseos']);
+?>
   <h1>Bienvenido <?= $_SESSION['name'] ?></h1>
 
   <h2>Lista de deseos</h2>
@@ -18,7 +21,7 @@
   // exit();
   if (isset($deseos) && count($deseos)) {
     foreach ($deseos as $id => $deseo) {
-      echo "<li> Deseo nº $id: " . $deseo . ' <a href="?method=delete&id=' . $id . '"> borrar</a> </li>';
+      echo "<li> Deseo nº $id: " . $deseo . ' <a href="?method=empty&id=' . $id . '"> borrar</a> </li>';
     }
   } else {
     echo "No hay deseos todavía";
