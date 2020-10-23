@@ -53,9 +53,18 @@ class App
       header('Location: index.php?method=home');
   }
   public function empty(){
-      $id = $_POST['deseo'];
+    unset($_SESSION['deseos']);
+    header('Location: index.php?method=home');
+  }
+  public function delete(){ 
+    if (isset($_SESSION['deseos'])) {
+        $deseos = $_SESSION['deseos'];
+      } else {
+        $deseos = [];
+      }
+    $id = $_GET['id'];
     unset($deseos[$id]);
-      header('Location: index.php?method=home');
+    header('Location: index.php?method=home');
   }
 
 }
